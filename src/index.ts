@@ -1,5 +1,2 @@
-function hello() {
-  console.log("hello");
-}
-
-export default hello;
+const log = require("../dist/index");
+log();

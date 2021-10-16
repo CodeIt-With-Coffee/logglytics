@@ -1,8 +1,10 @@
 {
   "compilerOptions": {
-    "types": ["node"],
-    "outDir": "build",
-    "rootDir": "src",
-    "esModuleInterop": true
+    "target": "es5",
+    "module": "commonjs",
+    "declaration": true,
+    "outDir": "dist",
+    "strict": true,
+    "skipLibCheck": true
   }
 }

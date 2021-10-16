@@ -35,7 +35,7 @@ const postRequest = async (
 
 function logger(config: Config): Logger {
   const log = (type: LEVEL, message: string) => {
-    postRequest(`${BASE}/api/event`, {
+    postRequest(`${BASE}/api/log`, {
       ...config,
       type,
       message,
@@ -44,7 +44,7 @@ function logger(config: Config): Logger {
       .catch(console.error);
   };
   const event = (key: string | EVENT) => {
-    postRequest(`${BASE}/api/log`, {
+    postRequest(`${BASE}/api/event`, {
       ...config,
       key,
     })

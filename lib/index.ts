@@ -1,7 +1,7 @@
 import axios from "axios";
 import { Config, EVENT, LEVEL, Logger } from "./types";
 
-const BASE = "https://logglytics.herokuapp.com";
+const BASE = "https://logglytics-backend.onrender.com";
 
 const headers = () => {
   return {
